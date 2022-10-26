@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("../../assets/fonts/Orbitron-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("../../assets/fonts/Orbitron-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("../../assets/fonts/Orbitron-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("../../assets/fonts/Orbitron-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    color: white;
+  }
+  50% {
+    color: grey;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: white;
+  }
+  50% {
+    color: grey;
+  }
+  100% {
+    color: black;
+  }
+}
+.pokemon__quiz {
+  background-image: url("../../assets/images/cqhO8rQ-pokemon-wallpapers.jpg");
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+}
+.pokemon__quiz .pokemon .pokemon__title {
+  font-family: "Orbitron";
+  font-weight: 700;
+  -webkit-animation: color-change 5s ease infinite;
+          animation: color-change 5s ease infinite;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2rem 0;
+  font-size: 3rem;
+}
+.pokemon__quiz .pokemon__test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pokemon__quiz .pokemon__test .pokemon__test--container {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 0.625rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  width: 55%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.pokemon__quiz .pokemon__test .pokemon__test--container .pokemon__test--img {
+  width: 28.125rem;
+  height: 28.125rem;
+  margin: auto;
+}
+.pokemon__quiz .pokemon__test .pokemon__test--type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 55%;
+  gap: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.pokemon__quiz .pokemon__test .pokemon__test--type .pokemon__test--button {
+  font-family: "Orbitron";
+  font-weight: 500;
+  border-radius: 0.625rem;
+  width: 45%;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=index.css.map */
